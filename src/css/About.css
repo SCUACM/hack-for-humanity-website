@@ -1,0 +1,26 @@
+#about {
+    margin-inline: 4em;
+    padding-top: 1em;
+    p {
+        font-family: CaskaydiaMono;
+        font-size: 20px;
+        text-align: center;
+    }
+    h2 {
+        font-family: CaskaydiaMono;
+        text-align: center;
+        padding: 1em 4em;
+        margin: 0;
+    }
+    div.about-title {
+        background-image: url('../assets/images/bluewashitape.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
