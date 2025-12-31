@@ -34,8 +34,6 @@ function Home() {
 
     return (
         <section id='home'> 
-            <div className='images'>
-            </div>
             <div className='text-block'>
                 <h1>Hack for<br/>Humanity</h1>
                 <p>Feb 28 - Mar 1, 2026 • In-Person</p>

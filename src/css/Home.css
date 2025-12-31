@@ -1,233 +1,232 @@
 #home {
     margin: 0;
-}
 
-h1 {
-    font-family: GlowBetter;
-    color: var(--charcoal-blue);
-    font-size: 100px;
-    margin-bottom: 0;
-    margin-top: 1em;
-}
-
-p {
-    font-family: CaskaydiaMono;
-    font-weight: normal;
-    font-size: 22px;
-}
-
-div.text-block p {
-    margin-block: 2em;
-}
-
-div.text-block {
-    color: var(--hunter-green);
-    margin-left: 4em;
-    width: auto;
-    line-height: 1.2;
-    position: relative;
-    overflow: hidden;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    vertical-align: center;
-}
-
-.signup-button {
-    background-color: var(--light-blue);
-    padding-block: 2em;
-    padding-inline: 3em;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    margin-bottom: 3em;
-}
-
-.signup-link {
-    text-decoration: none;
-    color: var(--charcoal-blue);
-    font-family: CaskaydiaMono;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.signup-link:visited .signup-link:link {
-    color: var(--charcoal-blue);
-}
-
-div.countdown {
-    background-color: var(--charcoal-blue);
-    color: var(--light-blue);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-div.countdown p {
-    margin-top: 2em;
-}
-
-span {
-    color: white;
-    font-family: CaskaydiaMono;
-    font-size: 30px;
-    margin-bottom: 2em;
-}
-
-span.countdown-number {
-    font-size: 80px;
-}
-
-img {
-    position: absolute;
-    z-index: -1;
-}
-
-img.earth-sticker {
-    bottom: -200px;
-    right: -80px;
-    max-height: 700px;
-}
-
-img.rocket-sticker {
-    transform: rotate(-37deg);
-    right: 370px;
-    top: -10px;
-    max-height: 480px;
-}
-
-img.star-sticker1 {
-    max-height: 250px;
-    right: 60px;
-    top: 50px;
-}
-
-img.star-sticker2 {
-    max-height: 250px;
-    right: 530px;
-    bottom: 30px;
-    transform: rotate(110deg);
-}
-
-@media only screen and (max-width: 1200px) {
-    img.earth-sticker {
-        max-height: 600px;
-        right: -50px;
-        bottom: -180px;
-    }
     h1 {
+        font-family: GlowBetter;
+        color: var(--charcoal-blue);
+        font-size: 100px;
+        margin-bottom: 0;
+        margin-top: 1em;
+    }
+
+    p {
+        font-family: CaskaydiaMono;
+        font-weight: normal;
+        font-size: 22px;
+    }
+
+    div.text-block p {
+        margin-block: 2em;
+    }
+
+    div.text-block {
+        color: var(--hunter-green);
+        margin-left: 4em;
+        width: auto;
+        line-height: 1.2;
+        position: relative;
+        overflow: hidden;
+        min-height: 700px;
+        display: flex;
+        flex-direction: column;
+        vertical-align: center;
+    }
+
+    .signup-button {
+        background-color: var(--light-blue);
+        padding-block: 2em;
+        padding-inline: 3em;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin-bottom: 3em;
+    }
+
+    .signup-link {
+        text-decoration: none;
+        color: var(--charcoal-blue);
+        font-family: CaskaydiaMono;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .signup-link:visited .signup-link:link {
+        color: var(--charcoal-blue);
+    }
+
+    div.countdown {
+        background-color: var(--charcoal-blue);
+        color: var(--light-blue);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.countdown p {
+        margin-top: 2em;
+    }
+
+    span {
+        color: white;
+        font-family: CaskaydiaMono;
+        font-size: 30px;
+        margin-bottom: 2em;
+    }
+
+    span.countdown-number {
         font-size: 80px;
     }
-    p {
-        font-size: 21px;
+
+    div.text-block img {
+        position: absolute;
+        z-index: -1;
     }
-    div.text-block {
-        min-height: 600px;
-    }
-    img.rocket-sticker {
-        max-height: 350px;
-        top: 10px;
-        right: 320px;
-    }
-    img.star-sticker1 {
-        max-height: 180px;
-        top: 70px;
-        right: 40px;
-    }
-    img.star-sticker2 {
-        max-height: 180px;
-        right: 480px;
-    }
-    span.countdown-number {
-        font-size: 60px;
-    }
-    span {
-        font-size: 25px;
-    }
-    .signup-link {
-        font-size: 21px;
-    }
-}
-@media only screen and (max-width: 1000px) {
-    img.rocket-sticker {
-        max-height: 250px;
-        bottom: 50px;
-        top: auto;
-        left: calc((100% - 800px)/2 + 30px);
-        right: auto;
-    }
-    img.star-sticker1 {
-        max-height: 200px;
-        bottom: 80px;
-        top: auto;
-        right: calc((100% - 800px)/2 + 30px);
-        left: auto;
-    }
-    img.star-sticker2 {
-        display: none;
-    }
+
     img.earth-sticker {
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%) translateY(60%);
-        bottom: 0;
-        max-width: 100%;
-        max-height: 800px;
+        bottom: -200px;
+        right: -80px;
+        max-height: 700px;
     }
-    h1 {
-        text-align: center;
-        /* margin: 0; */
-    }
-    div.text-block {
-        margin: 0;
-        min-height: 800px;
-    }
-    div.text-block p {
-        text-align: center;
-    }
-    div.signup-button {
-        margin: 0 auto 3em auto;
-        width: fit-content;
-    }
-    span {
-        font-size: 20px;
-    }
-    span.countdown-number {
-        font-size: 50px;
-    }
-}
 
-@media only screen and (max-width: 800px) {
-    span {
-        font-size: 18px;
-    }
-    span.countdown-number {
-        font-size: 40px;
-    }
     img.rocket-sticker {
-        max-height: 230px;
-        bottom: 70px;
-        top: auto;
-        left: 50px;
-        right: auto;
+        transform: rotate(-37deg);
+        right: 370px;
+        top: -10px;
+        max-height: 480px;
     }
-    img.star-sticker1 {
-        max-height: 180px;
-        bottom: 100px;
-        top: auto;
-        right: 60px;
-        left: auto;
-    }
-}
 
-@media only screen and (max-width: 650px) {
-    span {
-        font-size: 16px;
+    img.star-sticker1 {
+        max-height: 250px;
+        right: 60px;
+        top: 50px;
     }
-    span.countdown-number {
-        font-size: 30px;
+
+    img.star-sticker2 {
+        max-height: 250px;
+        right: 530px;
+        bottom: 30px;
+        transform: rotate(110deg);
+    }
+
+    @media only screen and (max-width: 1200px) {
+        img.earth-sticker {
+            max-height: 600px;
+            right: -50px;
+            bottom: -180px;
+        }
+        h1 {
+            font-size: 80px;
+        }
+        p {
+            font-size: 21px;
+        }
+        div.text-block {
+            min-height: 600px;
+        }
+        img.rocket-sticker {
+            max-height: 350px;
+            top: 10px;
+            right: 320px;
+        }
+        img.star-sticker1 {
+            max-height: 180px;
+            top: 70px;
+            right: 40px;
+        }
+        img.star-sticker2 {
+            max-height: 180px;
+            right: 480px;
+        }
+        span.countdown-number {
+            font-size: 60px;
+        }
+        span {
+            font-size: 25px;
+        }
+        .signup-link {
+            font-size: 21px;
+        }
+    }
+    @media only screen and (max-width: 1000px) {
+        img.rocket-sticker {
+            max-height: 250px;
+            bottom: 50px;
+            top: auto;
+            left: calc((100% - 800px)/2 + 30px);
+            right: auto;
+        }
+        img.star-sticker1 {
+            max-height: 200px;
+            bottom: 80px;
+            top: auto;
+            right: calc((100% - 800px)/2 + 30px);
+            left: auto;
+        }
+        img.star-sticker2 {
+            display: none;
+        }
+        img.earth-sticker {
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%) translateY(60%);
+            bottom: 0;
+            max-width: 100%;
+            max-height: 800px;
+        }
+        h1 {
+            text-align: center;
+        }
+        div.text-block {
+            margin: 0;
+            min-height: 800px;
+        }
+        div.text-block p {
+            text-align: center;
+        }
+        div.signup-button {
+            margin: 0 auto 3em auto;
+            width: fit-content;
+        }
+        span {
+            font-size: 20px;
+        }
+        span.countdown-number {
+            font-size: 50px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        span {
+            font-size: 18px;
+        }
+        span.countdown-number {
+            font-size: 40px;
+        }
+        img.rocket-sticker {
+            max-height: 230px;
+            bottom: 70px;
+            top: auto;
+            left: 50px;
+            right: auto;
+        }
+        img.star-sticker1 {
+            max-height: 180px;
+            bottom: 100px;
+            top: auto;
+            right: 60px;
+            left: auto;
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        span {
+            font-size: 16px;
+        }
+        span.countdown-number {
+            font-size: 30px;
+        }
     }
 }
