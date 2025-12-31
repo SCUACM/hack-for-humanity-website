@@ -178,13 +178,15 @@
         }
         h1 {
             text-align: center;
+            margin-top: 1em;
         }
         div.text-block {
             margin: 0;
-            min-height: 800px;
+            min-height: 750px;
         }
         div.text-block p {
             text-align: center;
+            margin-block: 0.5em;
         }
         div.signup-button {
             margin: 0 auto 3em auto;
@@ -227,6 +229,41 @@
         }
         span.countdown-number {
             font-size: 30px;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        div.text-block {
+            min-height: 600px;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .signup-button {
+            padding-block: 1.5em;
+        }
+        span {
+            font-size: 14px;
+        }
+        span.countdown-number {
+            font-size: 25px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-top: 2em;
+        }
+        img.rocket-sticker {
+            max-height: 150px;
+            bottom: 50px;
+            top: auto;
+            left: 30px;
+            right: auto;
+        }
+        img.star-sticker1 {
+            max-height: 130px;
+            bottom: 70px;
+            top: auto;
+            right: 40px;
+            left: auto;
         }
     }
 }

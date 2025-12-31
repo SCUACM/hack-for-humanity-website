@@ -48,10 +48,10 @@ function Home() {
             <div className='countdown'>
                 <p>Countdown till Hackathon!</p>
                 <span>
-                    <span className='countdown-number'>{String(days).padStart(2, '0')} </span> days 
-                    <span className='countdown-number'> {String(hours).padStart(2, '0')} </span> hours
-                    <span className='countdown-number'> {String(minutes).padStart(2, '0')} </span> minutes 
-                    <span className='countdown-number'> {String(seconds).padStart(2, '0')} </span> seconds
+                    <span className='countdown-number'>{String(days).padStart(2, '0')} </span> d 
+                    <span className='countdown-number'> {String(hours).padStart(2, '0')} </span> hr
+                    <span className='countdown-number'> {String(minutes).padStart(2, '0')} </span> min 
+                    <span className='countdown-number'> {String(seconds).padStart(2, '0')} </span> sec
                 </span>
             </div>
         </section>
