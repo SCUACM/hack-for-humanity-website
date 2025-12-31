@@ -1,0 +1,7 @@
+function Stats() {
+    return (
+        <section id="stats"></section>
+    );
+}
+
+export default Stats;
