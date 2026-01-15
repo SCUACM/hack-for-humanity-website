@@ -12,7 +12,7 @@ function Home() {
 
     function updateCountdown() {
         const ms = new Date("2026-02-28T17:00:00Z").getTime() - new Date().getTime();
-        console.log(ms);
+        // console.log(ms);
         if (ms <= 0) {
             setDays(0);
             setHours(0);

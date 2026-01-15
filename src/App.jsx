@@ -5,6 +5,7 @@ import Prizes from './components/Prizes';
 import Stats from "./components/Stats";
 import Sponsors from "./components/Sponsors";
 import FAQ from './components/FAQ';
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Stats/>
       <Sponsors/>
       <FAQ/>
+      {/* <Footer/> */}
     </>
   );
 }
