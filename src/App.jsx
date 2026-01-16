@@ -18,7 +18,7 @@ function App() {
       <Stats/>
       <Sponsors/>
       <FAQ/>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

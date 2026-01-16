@@ -10,23 +10,28 @@ import carouselWashiTape from '../assets/images/squarewashitape.png';
 function About() {
     const [index, setIndex] = useState(0);
     const images = [
-        {
+        {   
+            id: 0,
             imgSrc: carouselImage1,
             altText: "H4H organizers and judges with H4H merch"
         },
         {
+            id: 1,
             imgSrc: carouselImage2,
             altText: "Student team working together on project"
         },
         {
+            id: 2,
             imgSrc: carouselImage3,
             altText: "Students gathered around fire eating s'mores"
         },
         {
+            id: 3,
             imgSrc: carouselImage4,
             altText: "Student team smiling at camera during H4H"
         },
         {
+            id: 4,
             imgSrc: carouselImage5,
             altText: "Many students sitting in Locatelli working on H4H projects"
         }
@@ -58,7 +63,9 @@ function About() {
             </p>
             <div className='carousel'>
                 <button onClick={handlePrevButton} className='left-arrow'></button>
-                <img src={images[index].imgSrc} alt={images[index].altText} className='carousel-image'></img>
+                {images.map((img) => (
+                    <img src={img.imgSrc} alt={img.altText} className={index === img.id ? 'carousel-image' : 'carousel-image-hidden'} key={img.id}></img>
+                ))}
                 <img src={carouselWashiTape} className='carousel-tape'></img>
                 <p className='image-counter'>{index+1}/{images.length}</p>
                 <button onClick={handleNextButton}></button>

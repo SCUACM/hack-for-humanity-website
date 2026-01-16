@@ -33,11 +33,16 @@
         align-items: center;
         margin-bottom: 1em;
         position: relative;
+        
         img.carousel-image {
             object-fit: cover;
             width: 60%;
             height: auto;
             aspect-ratio: 16 / 9;
+            display: block;
+        }
+        img.carousel-image-hidden {
+            display: none;
         }
         .left-arrow {
             transform: scaleX(-1);
