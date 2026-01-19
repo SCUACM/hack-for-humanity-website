@@ -1,0 +1,35 @@
+#sponsors {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    min-height: 600px;
+
+    p {
+        font-family: 'CaskaydiaMono';
+        font-weight: normal;
+        color: var(--hunter-green);
+    }
+    h1 {
+        font-family: 'GlowBetter';
+        font-weight: normal;
+        color: var(--hunter-green);
+    }
+    img.sticker {
+        position: absolute;
+    }
+    img.star2 {
+        max-width: 50px;
+        top: 0;
+        left: 50px;
+    }
+    img.star1 {
+        max-width: 80px;
+        top: 0;
+        right: 50px;
+    }
+    img.rocket {
+        bottom: 0;
+        max-height: 70%;
+        right: 0;
+    }
+}
