@@ -1,0 +1,106 @@
+#faq {
+    position: relative;
+    padding: 20px 40px 150px 40px;
+}
+
+h1{
+        position: relative;
+        color: var(--charcoal-blue);
+        font-size: 50px;
+        text-align:center;
+        margin: 0;
+        margin-bottom: 80px;
+        z-index: 20;
+}
+
+.center-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 250px;
+    height: auto;
+}
+
+.faq-title{
+    margin-bottom: 100px;
+    color:black;
+}
+
+.faq-container{
+    position: relative;
+    max-width:1000px;
+    height:800px;
+    margin: 0 auto;
+    font-family:CaskaydiaMono;
+    z-index: 1;
+}
+
+.faq-item{
+   position: absolute;
+   top:50%;
+    left:50%;
+    width: 350px;
+   animation: orbit 120s linear infinite;
+   z-index: 5;
+}
+
+.faq-item:nth-child(1) { animation-delay: 0s; }
+.faq-item:nth-child(2) { animation-delay: -20s; }
+.faq-item:nth-child(3) { animation-delay: -40s; }
+.faq-item:nth-child(4) { animation-delay: -60s; }
+.faq-item:nth-child(5) { animation-delay: -80s; }
+.faq-item:nth-child(6) { animation-delay: -100s; }
+
+.faq-container:hover .faq-item{
+    animation-play-state: paused;
+}
+@keyframes orbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translate(250px, 300px) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translate(250px, 300px) rotate(-360deg);
+    }
+}
+
+.faq-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.faq-item:nth-child(odd) .faq-question{
+    background-color: #b8d989;
+}
+
+.faq-item:nth-child(even) .faq-question{
+    background-color: #B5D9E8;
+}
+
+.faq-question h2{
+    margin:0;
+    font-size:19px;
+    color: #333;
+    padding: 15px;
+}
+
+
+.faq-answer{
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius:15px;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-answer p{
+    margin:0;
+    line-height: 1.6;
+    color: #555;
+}
