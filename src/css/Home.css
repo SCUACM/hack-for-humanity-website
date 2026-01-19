@@ -7,6 +7,8 @@
         font-size: 100px;
         margin-bottom: 0;
         margin-top: 1em;
+        margin-left: 0;  /* Remove negative margin */
+        text-align: left; /* Ensure it's left-aligned */
     }
 
     p {
@@ -21,7 +23,8 @@
 
     div.text-block {
         color: var(--hunter-green);
-        margin-left: 4em;
+        margin-left: 2em;  /* Reduce this from 4em */
+        padding-left: 2em; /* Add padding for the content */
         width: auto;
         line-height: 1.2;
         position: relative;
@@ -183,6 +186,7 @@
         div.text-block {
             margin: 0;
             min-height: 750px;
+            padding-left: 0;
         }
         div.text-block p {
             text-align: center;
