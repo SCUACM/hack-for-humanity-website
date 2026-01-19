@@ -4,15 +4,31 @@
     position: relative;
     min-height: 600px;
 
-    p {
+    .sponsors-container {
+        margin: 0 1em;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .sponsors-title {
         font-family: 'CaskaydiaMono';
         font-weight: normal;
         color: var(--hunter-green);
+        background-image: url('../assets/images/bluewashitape.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 1em;
+        margin: 0;
+        
     }
     h1 {
         font-family: 'GlowBetter';
         font-weight: normal;
         color: var(--hunter-green);
+        font-size: 50px;
+        margin-block: 0;
     }
     img.sticker {
         position: absolute;
@@ -31,5 +47,36 @@
         bottom: 0;
         max-height: 70%;
         right: 0;
+        z-index: -1;
+    }
+    .sponsor-card {
+        background-color: rgba(255, 255, 255, .8);
+        /* background-color: purple; */
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        justify-content: center;
+    }
+    .tier1 {
+        max-width: 50%;
+        flex: 0 1 50%;
+    }
+    img.sponsor-logo {
+        width: 90%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+    .sponsor-link {
+        width: auto;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+        vertical-align: top;
+        box-sizing: border-box;
+        flex: 1 1 0;
     }
 }
