@@ -1,39 +1,67 @@
 import '../css/Sponsors.css';
-import blueWashiTape from '../assets/images/bluewashitape.png';
-import starSticker from '../assets/images/star_sticker_border.png';
+import airplaneSticker from '../assets/images/paperairplane.png';
 import rocketImg from '../assets/images/rocket.png';
 import cioccaLogo from '../assets/images/sponsors/ciocca_center.png';
+import crowdStrikeLogo from '../assets/images/sponsors/crowdstrike_logo.png';
 
 function Sponsors() {
-    const sponsors = [
+    const sponsorsTier1 = [
         {
             id: 0,
             src: cioccaLogo,
-            link: "https://www.scu.edu/cioccacenter/",
-            tier: 1
+            link: "https://www.scu.edu/cioccacenter/"
         },
+    ];
+    const sponsorsTier2 = [
         {
-            id: 1,
+            id: 0,
             src: "https://upload.wikimedia.org/wikipedia/commons/0/07/ByteDance_logo_English.svg",
-            link: "https://www.bytedance.com/en/",
-            tier: 1
+            link: "https://www.bytedance.com/en/"
+        }
+    ];
+    const sponsorsTier3 = [
+        {
+            id: 0,
+            src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/1280px-AMD_Logo.svg.png",
+            link: "https://www.amd.com/"
+        }
+    ];
+    const sponsorsTier4 = [
+        {
+            id: 0,
+            src: crowdStrikeLogo,
+            link: "https://www.crowdstrike.com/en-us/"
         }
     ];
 
-
     return (
         <section id="sponsors">
-            <img src={starSticker} className='sticker star1'></img>
-            <img src={starSticker} className='sticker star2'></img>
+            {/* <img src={airplaneSticker} className='sticker plane'></img> */}
             <img src={rocketImg} className='sticker rocket'></img>
             <h2 className='sponsors-title'>Thank you to all our</h2>
             <h1>Sponsors!</h1>
 
             <div className='sponsors-container'>
-                {sponsors.map((s) => (
-                    <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier={"tier"+s.tier} key={s.id}/>
+                {sponsorsTier1.map((s) => (
+                    <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier="tier1" key={s.id}/>
                 ))}
             </div>
+            <div className='sponsors-container'>
+                {sponsorsTier2.map((s) => (
+                    <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier="tier2" key={s.id}/>
+                ))}
+            </div>
+            <div className='sponsors-container'>
+                {sponsorsTier3.map((s) => (
+                    <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier="tier3" key={s.id}/>
+                ))}
+            </div>
+            <div className='sponsors-container'>
+                {sponsorsTier4.map((s) => (
+                    <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier="tier4" key={s.id}/>
+                ))}
+            </div>
+            <p>More to be announced!</p>
         </section>
     );
 }

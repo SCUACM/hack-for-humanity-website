@@ -1,14 +1,30 @@
 #sponsors {
     margin: 0;
+    padding-bottom: 2em;
     text-align: center;
     position: relative;
     min-height: 600px;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    border-bottom: 3px solid;
+    border-image: repeating-linear-gradient(
+        to right,
+        black 0px,
+        black 60px,
+        transparent 60px,
+        transparent 120px
+    ) 1;
+    border-image-slice: 1;
+    box-sizing: border-box;
+    --sponsor-card-height: 7.5rem;
 
     .sponsors-container {
-        margin: 0 1em;
+        margin: 1em 4em;
         display: flex;
-        justify-content: center;
-        gap: 2em;
+        flex-wrap: wrap;
+        gap: .6em;
+        justify-self: center;
     }
 
     .sponsors-title {
@@ -21,7 +37,7 @@
         background-repeat: no-repeat;
         padding: 1em;
         margin: 0;
-        
+        font-size: large;
     }
     h1 {
         font-family: 'GlowBetter';
@@ -30,23 +46,29 @@
         font-size: 50px;
         margin-block: 0;
     }
+    p {
+        font-family: 'CaskaydiaMono';
+        font-size: large;
+        color: var(--charcoal-blue);
+        margin: 0 auto;
+        padding: 1em 1.5em;
+        background-color: var(--light-blue);
+        width: fit-content;
+        border-radius: 10px;
+    }
     img.sticker {
         position: absolute;
     }
-    img.star2 {
-        max-width: 50px;
+    img.plane {
+        left: 0;
         top: 0;
-        left: 50px;
-    }
-    img.star1 {
-        max-width: 80px;
-        top: 0;
-        right: 50px;
+        max-width: 150px;
     }
     img.rocket {
-        bottom: 0;
+        bottom: -4px;
         max-height: 70%;
         right: 0;
+        left: auto;
         z-index: -1;
     }
     .sponsor-card {
@@ -54,17 +76,26 @@
         /* background-color: purple; */
         display: flex;
         box-sizing: border-box;
-        width: 100%;
-        border-radius: 20px;
+        width: auto;
+        border-radius: 10px;
         overflow: hidden;
         justify-content: center;
     }
     .tier1 {
-        max-width: 50%;
-        flex: 0 1 50%;
+        height: calc(var(--sponsor-card-height) * 1.2);
+        flex: 0 1;
+    }
+    .tier2 {
+        height: calc(var(--sponsor-card-height) * .8);
+    }
+    .tier3 {
+        height: calc(var(--sponsor-card-height) * .6);
+    }
+    .tier4 {
+        height: calc(var(--sponsor-card-height) * .5);
     }
     img.sponsor-logo {
-        width: 90%;
+        width: 80%;
         height: auto;
         display: block;
         object-fit: contain;
