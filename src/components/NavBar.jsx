@@ -1,5 +1,5 @@
 import { HashLink } from "react-router-hash-link";
-import logo from '../assets/images/h4h_logo_glowing.png'
+import logo from '../assets/images/h4h_logo.png'
 import '../css/NavBar.css';
 
 function NavBar() {
