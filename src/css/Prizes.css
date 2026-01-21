@@ -1,207 +1,181 @@
 #prizes {
-    padding-top: 0em;
-    padding-bottom: 2em;
-    margin-top: -2em;
+  padding-top: 0em;
+  padding-bottom: 2em;
+  margin-top: -2em;
+  
+  h2 {
+    font-family: CaskaydiaMono;
+    text-align: center;
+    padding: 0.5em 4em;
+    margin: 0;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  h3 {
+    font-family: CaskaydiaMono;
+    text-align: center;
+    margin: 0;
+    font-size: x-large;
+    color: black;
+  }
+  
+  div.prizes-title {
+    background-image: url('../assets/images/squarewashitape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 600px;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  div.top-prizes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3em;
+    margin: 2em 0;
     
-    h2 {
-      font-family: CaskaydiaMono;
-      text-align: center;
-      padding: 0.5em 4em;
-      margin: 0;
-      font-weight: bold;
-      font-size: xx-large;
-    }
-    
-    h3 {
-      font-family: CaskaydiaMono;
-      text-align: center;
-      margin: 0;
-      font-size: x-large;
-      color: black;
-    }
-    
-    div.prizes-title {
-      background-image: url('../assets/images/squarewashitape.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 100%;
-      max-width: 600px;
-      min-height: 120px;
+    div.prize-item {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      margin: 0 auto;
-    }
-    
-    div.top-prizes {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      gap: 3em;
-      margin: 2em 0;
+      gap: 1em;
       
-      div.prize-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1em;
-        
-        img.prize-icon {
-          width: 200px;
-          height: auto;
-        }
-        
-        p.prize-text {
-          font-family: CaskaydiaMono;
-          font-size: x-large;
-          text-align: center;
-          margin: 0;
-          color: var(--hunter-green);
-        }
-        
-        &:nth-child(2) {
-          transform: translateY(-30px);
-        }
+      img.prize-icon {
+        width: 300px;
+        height: auto;
+      }
+      
+      p.prize-text {
+        font-family: CaskaydiaMono;
+        font-size: x-large;
+        text-align: center;
+        margin: 0;
+        color: var(--hunter-green);
+      }
+      
+      &:nth-child(2) {
+        transform: translateY(-30px);
       }
     }
+  }
+  
+  div.additional-prizes-title {
+    background-image: url('../assets/images/bluewashitape.png');
+    background-size: contain;
+    background-position: center;
+    width: fit-content;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    padding: 0 2em;
+  }
+  
+  div.special-prizes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 2em 0;
     
-    div.additional-prizes-title {
-      background-image: url('../assets/images/bluewashitape.png');
-      background-size: contain;
-      background-position: center;
-      width: fit-content;
-      min-height: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 2em auto;
-      padding: 0 2em;
-    }
-    
-    div.special-prizes {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2em;
-      margin: 2em 0;
-      
-      div.special-prize {
-        border-radius: 30px;
-        padding: 2em 3em;
-        position: relative;
-        min-width: 250px;
-        
-        p {
-          font-family: CaskaydiaMono;
-          font-size: large;
-          text-align: center;
-          margin: 0;
-          line-height: 1.6;
-        }
-        
-        &.green-box {
-          background-color: #b8d989;
-          
-          img.sprout-left {
-            transform: scaleX(-1);
-            position: absolute;
-            bottom: -55px;
-            left: -20px;
-            width: 160px;
-          }
-          
-          img.sprout-right {
-            position: absolute;
-            bottom: -55px;
-            right: -20px;
-            width: 160px;
-          }
-        }
-        
-        &.blue-box {
-          background-color: #B5D9E8;
-        }
-        
-        &.graduate-box {
-          img.grad-cap {
-            transform: rotate(30deg); 
-            position: absolute;
-            top: -40px;
-            right: -30px;
-            width: 100px;
-          }
-        }
-      }
-    }
-    
-    div.ctf-prize {
-      background-color: #B5D9E8;
-      border-radius: 40px;
-      padding: 2em 4em;
-      margin: 3em auto;
-      max-width: 600px;
+    div.special-prize {
+      border-radius: 30px;
+      padding: 2em 3em;
+      position: relative;
+      min-width: 250px;
       
       p {
         font-family: CaskaydiaMono;
         font-size: large;
         text-align: center;
         margin: 0;
-        line-height: 1.8;
+        line-height: 1.6;
+      }
+      
+      &.green-box {
+        background-color: #b8d989;
         
-        strong {
-          font-weight: bold;
+        img.sprout-left {
+          transform: scaleX(-1);
+          position: absolute;
+          bottom: -55px;
+          left: -20px;
+          width: 160px;
+        }
+        
+        img.sprout-right {
+          position: absolute;
+          bottom: -55px;
+          right: -20px;
+          width: 160px;
+        }
+      }
+      
+      &.blue-box {
+        background-color: #B5D9E8;
+      }
+      
+      &.graduate-box {
+        img.grad-cap {
+          transform: rotate(30deg); 
+          position: absolute;
+          top: -40px;
+          right: -30px;
+          width: 100px;
+        }
+      }
+    }
+  }
+  
+  div.ctf-prize {
+    background-color: #B5D9E8;
+    border-radius: 40px;
+    padding: 2em 4em;
+    margin: 3em auto;
+    max-width: 600px;
+    
+    p {
+      font-family: CaskaydiaMono;
+      font-size: large;
+      text-align: center;
+      margin: 0;
+      line-height: 1.8;
+      
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    div.top-prizes {
+      gap: 2em;
+      
+      div.prize-item {
+        img.prize-icon {
+          width: 150px;
+        }
+        
+        p.prize-text {
+          font-size: large;
         }
       }
     }
     
-    @media only screen and (max-width: 900px) {
-      div.top-prizes {
-        gap: 2em;
-        
-        div.prize-item {
-          img.prize-icon {
-            width: 150px;
-          }
-          
-          p.prize-text {
-            font-size: large;
-          }
-        }
-      }
+    div.special-prizes {
+      flex-wrap: wrap;
+      gap: 1.5em;
       
-      div.special-prizes {
-        flex-wrap: wrap;
-        gap: 1.5em;
-        
-        div.special-prize {
-          min-width: 200px;
-          padding: 1.5em 2em;
-          
-          p {
-            font-size: medium;
-          }
-        }
-      }
-    }
-    
-    @media only screen and (max-width: 650px) {
-      div.top-prizes {
-        flex-direction: column;
-        gap: 1.5em;
-        
-        div.prize-item {
-          img.prize-icon {
-            width: 120px;
-          }
-          
-          p.prize-text {
-            font-size: medium;
-          }
-        }
-      }
-      
-      div.ctf-prize {
+      div.special-prize {
+        min-width: 200px;
         padding: 1.5em 2em;
         
         p {
@@ -210,3 +184,48 @@
       }
     }
   }
+  
+  @media only screen and (max-width: 650px) {
+    div.top-prizes {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+      padding: 0 1em;
+      
+      div.prize-item {
+        width: 100%;
+        max-width: 200px;
+        
+        img.prize-icon {
+          width: 100%;
+          max-width: 120px;
+        }
+        
+        p.prize-text {
+          font-size: medium;
+        }
+        
+        &:nth-child(2) {
+          order: 1;
+        }
+      
+        &:nth-child(1) {
+          order: 2;
+          transform: translateY(0);
+        }
+        
+        &:nth-child(3) {
+          order: 3;
+        }
+      }
+    }
+    
+    div.ctf-prize {
+      padding: 1.5em 2em;
+      
+      p {
+        font-size: medium;
+      }
+    }
+  }
+}
