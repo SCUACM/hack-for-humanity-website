@@ -11,9 +11,11 @@
   font-family: CaskaydiaMono; /*make to have like a slight transparency*/
   color: var(--hunter-green);
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  border-radius: 100px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: auto;
   z-index: 1000;
 }
 
