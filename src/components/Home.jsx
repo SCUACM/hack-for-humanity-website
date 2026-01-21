@@ -38,7 +38,7 @@ function Home() {
                 <h1>Hack for<br/>Humanity</h1>
                 <p>Feb 28 - Mar 1, 2026 • In-Person</p>
                 <div className='signup-button'>
-                    <a href='https://example.com/' className='signup-link' target="_blank" rel="noopener noreferrer">Sign Up Now!</a>
+                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTwDfNLT_qFDvWyBuL4kmmLOmNJX3BgCw29D5T_NyWG6a_Aw/viewform' className='signup-link' target="_blank" rel="noopener noreferrer">Sign Up Now!</a>
                 </div>
                  <img src={earthSticker} className='earth-sticker'></img>
                  <img src={rocketSticker} className='rocket-sticker'></img>
