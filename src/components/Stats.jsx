@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Stats.css';
-import pictureOne from '../assets/images/picture_one.jpg';
+import pictureOne from '../assets/images/picture_one.JPG';
 import pictureTwo from '../assets/images/picture_two.jpg';
 import pictureThree from '../assets/images/third_picture.jpg';
 import pictureFour from '../assets/images/fourth_picture.jpg';

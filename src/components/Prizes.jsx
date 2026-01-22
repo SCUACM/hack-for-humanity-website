@@ -1,9 +1,7 @@
-import React from 'react';
 import '../css/Prizes.css';
-import washiTape from '../assets/images/squarewashitape.png';
-import firstPlace from '../assets/images/first_place.png';
-import secondPlace from '../assets/images/second_place.png';
-import thirdPlace from '../assets/images/third_place.png';
+import firstPlace from '../assets/images/first_place.PNG';
+import secondPlace from '../assets/images/second_place.PNG';
+import thirdPlace from '../assets/images/third_place.PNG';
 import littleSprout from '../assets/images/little_sprout.png';
 import gradCap from '../assets/images/grad_cap.png';
 
