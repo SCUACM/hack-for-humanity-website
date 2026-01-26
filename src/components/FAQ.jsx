@@ -30,6 +30,9 @@ function FAQ() {
         {
             question: "Any other questions?",
             answer: "Feel free to email us at acm@scu.edu if you have any questions or concerns!"
+        },
+        {   question: "Can I start planning my project before the hackathon?",
+            answer: "Yes! We encourage you to start brainstorming and planning your project before the event, but no pre-written code is allowed."
         }
     ]
     return (
