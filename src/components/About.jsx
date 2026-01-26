@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../css/About.css';
 import carouselImage1 from '../assets/images/carousel-image1.jpg';
 import carouselImage2 from '../assets/images/carousel-image2.jpg';
@@ -38,20 +38,23 @@ function About() {
     ];
 
     const handlePrevButton = () => {
-        if (index-1 < 0) {
-            setIndex(images.length-1);
-        } else {
-            setIndex(index-1);
-        }
+        setIndex((index + images.length - 1) % images.length);
     };
     const handleNextButton = () => {
-        if (index+1 >= images.length) {
-            setIndex(0);
-        } else {
-            setIndex(index+1);
-        }
-
+        setIndex((index + 1) % images.length);
     };
+    const goToImage = () => {
+
+    }
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setIndex((index+1) % images.length);
+        }, 3000);
+        return () => {
+            clearInterval(intervalId);
+        };
+    },[index, images.length]);
 
     return (
         <section id="about">
@@ -67,7 +70,12 @@ function About() {
                     <img src={img.imgSrc} alt={img.altText} className={index === img.id ? 'carousel-image' : 'carousel-image-hidden'} key={img.id}></img>
                 ))}
                 <img src={carouselWashiTape} className='carousel-tape'></img>
-                <p className='image-counter'>{index+1}/{images.length}</p>
+                {/* <p className='image-counter'>{index+1}/{images.length}</p> */}
+                <div className='image-counter'>
+                    {images.map((img) => (
+                        <div key={img.id} className={`dot ${index === img.id ? 'active' : ''}`} onClick={goToImage}></div>
+                    ))}
+                </div>
                 <button onClick={handleNextButton}></button>
             </div>
         </section>

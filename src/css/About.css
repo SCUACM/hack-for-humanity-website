@@ -69,14 +69,26 @@
             transform: translateY(50%);
             max-width: 36%;
         }
-        p.image-counter {
+        .image-counter {
             position: absolute;
-            font-weight: bold;
             bottom: 0;
             margin: 0;
             transform: translateY(50%);
-            font-size: x-large;
-            color: black;
+            display: flex;
+            flex-direction: row;
+        }
+        .dot {
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            background-color: transparent;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            margin: 0 2px;
+        }
+        .dot.active {
+            background-color: black;
         }
     }
     @media only screen and (max-width: 650px) {
@@ -91,8 +103,10 @@
             img.carousel-image {
                 width: 70%;
             }
-            p.image-counter {
-                font-size: small;
+            .dot {
+                width: 7px;
+                height: 7px;
+                border-width: 1px;
             }
         }
     }
