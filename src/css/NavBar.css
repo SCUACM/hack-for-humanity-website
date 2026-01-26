@@ -83,56 +83,80 @@
   background-color: white;
 }
 
+/*Hamburger - hidden for desktop*/
+.hamburger{
+  display: none;
+  flex-direction: column;
+  background:none;
+  border:none;
+  cursor: pointer;
+  padding:0;
+  z-index:1001;
+  gap: 5px;
+}
+
+.hamburger span{
+  width: 25px;
+  height:3px;
+  background-color: var(--hunter-green);
+  transition: all 0.3s ease;
+  border-radius:2px;
+}
+
+.hamburger span.active:nth-child(1){
+  transform: rotate(45deg) translate(7px,7px);
+}
+.hamburger span.active:nth-child(2){
+  opacity:0;
+}
+.hamburger span.active:nth-child(1){
+  transform: rotate(45deg) translate(7px,-7px);
+}
+
+
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
-  .navbar {
-    border-radius: 20px;
-    padding:15px;
-    display:grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
-    gap:10px;
-    align-items: start;
+  .hamburger{
+    display: flex;
   }
-  .nav-logo {
-    grid-column:1;
-    grid-row: 1/-1;
+  .navbar{
+    border-radius:20px;
+    padding:15px;
+    flex-wrap:wrap;
+  }
+  .nav-logo{
     padding:0;
     margin:0;
-    align-self: center;
+    order: 1;
+  }
+  .nav-logo img{
+
   }
 
-  .nav-logo img {
-    height: 60px;
-    width: auto;
+  .hamburger{
+
   }
 
-  .nav-left {
-    grid-column: 2;
-    grid-row: 1;
-    width: 100%;
-    gap:10px;
+  .nav-buttons{
+
   }
 
-  .nav-links {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: flex-end;
-    gap: 10px;
-    font-size:14px;
-    margin-left: 20px;
+  .nav-left{
+
   }
 
-  .nav-buttons {
-   grid-column:2;
-    grid-row:2;
-    display:flex;
-    justify-content: flex-end;
-    gap:10px;
+  .nav-left.open{
+
   }
 
+  .nav-links{
+
+  }
+
+  .nav-links li{
+    
+  }
   .button{
-    padding: 8px 15px;
-    font-size: 13px;
-    white-space: nowrap;
+
   }
 }
