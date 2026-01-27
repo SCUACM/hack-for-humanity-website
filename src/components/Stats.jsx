@@ -15,25 +15,25 @@ function Stats() {
         <div className='stats-row'>
           <div className='stat-card'>
             <img src={pictureOne} alt="Stat visual" className='stat-image'/>
-            <p className='stat-text'>300+<br/>passionate builders</p>
+            <p className='stat-text'>300+<br/>Passionate Builders</p>
           </div>
           <div className='stat-card'>
             <img src={pictureTwo} alt="Stat visual" className='stat-image'/>
-            <p className='stat-text'>13 years<br/>of innovation</p>
+            <p className='stat-text'>13 years<br/>of Innovation</p>
           </div>
           <div className='stat-card'>
             <img src={pictureThree} alt="Stat visual" className='stat-image'/>
-            <p className='stat-text'>$10,000+<br/>in prizes</p>
+            <p className='stat-text'>$10,000+<br/>in Prizes</p>
           </div>
         </div>
         <div className='stats-row'>
           <div className='stat-card'>
             <img src={pictureFive} alt="Stat visual" className='stat-image'/>
-            <p className='stat-text'>50+<br/>groundbreaking projects</p>
+            <p className='stat-text'>50+<br/>Groundbreaking Projects</p>
           </div>
           <div className='stat-card'>
             <img src={pictureFour} alt="Stat visual" className='stat-image'/>
-            <p className='stat-text'>20+<br/>expert judges</p>
+            <p className='stat-text'>20+<br/>Expert Judges</p>
           </div>
         </div>
       </div>

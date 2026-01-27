@@ -30,7 +30,7 @@ function Prizes() {
       </div>
       
       <div className='additional-prizes-title'>
-        <h3>additional prizes</h3>
+        <h3>Additional Prizes</h3>
       </div>
       
       <div className='special-prizes'>
