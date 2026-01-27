@@ -1,7 +1,10 @@
 #nav {
   list-style-type: none;
 }
-
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
