@@ -78,6 +78,8 @@ function About() {
                 </div>
                 <button onClick={handleNextButton}></button>
             </div>
+            <p className='guide'>Find the Hack Pack <a className='guide' href='https://docs.google.com/document/d/1PobZxH83LIZdT4BMcPzYjLzrGmR7PvB3kXM_tkwdheA/edit?tab=t.0' target="_blank" rel="noopener noreferrer">here</a>!</p>
+            <p className='guide'>Find the H4H Ultimate Guide <a href='https://docs.google.com/document/d/1gth_pXwMyKtXqruqSzAsHE523zSX3vr97ZjRisNHX3c/edit?usp=sharing' target="_blank" rel="noopener noreferrer">here</a>!</p>
         </section>
     );
 }

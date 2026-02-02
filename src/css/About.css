@@ -1,6 +1,6 @@
 #about {
     padding-top: 2em;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
     p {
         font-family: CaskaydiaMono;
         font-size: x-large;
@@ -31,7 +31,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1em;
+        margin-bottom: 4em;
         position: relative;
         
         img.carousel-image {
@@ -89,6 +89,21 @@
         }
         .dot.active {
             background-color: black;
+        }
+    }
+    .guide {
+        text-align: center;
+        padding: 1em;
+        margin-inline: auto;
+        width: fit-content;
+        background-color: var(--hunter-green);
+        color: white;
+        border-radius: 13px;
+        a {
+            text-decoration: underline;
+            color: var(--willow-green);
+            margin: 0;
+            padding: 0;
         }
     }
     @media only screen and (max-width: 650px) {
