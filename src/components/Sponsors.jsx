@@ -1,8 +1,13 @@
 import '../css/Sponsors.css';
-import airplaneSticker from '../assets/images/paperairplane.png';
+// import airplaneSticker from '../assets/images/paperairplane.png';
 import rocketImg from '../assets/images/rocket.png';
-import cioccaLogo from '../assets/images/sponsors/ciocca_center.png';
-import crowdStrikeLogo from '../assets/images/sponsors/crowdstrike_logo.png';
+import cioccaLogo from '../assets/images/ciocca_center.png';
+import crowdStrikeLogo from '../assets/images/crowdstrike_logo.png';
+import bytedanceLogo from '../assets/images/ByteDance_logo.svg';
+import amdLogo from '../assets/images/amd_logo.svg';
+import elevenlabsLogo from '../assets/images/elevenlabs-logo-black.svg';
+import webspatialLogo from '../assets/images/webspatial-transparent.svg';
+import markkulaLogo from '../assets/images/markkula_logo.png';
 
 function Sponsors() {
     const sponsorsTier1 = [
@@ -15,14 +20,19 @@ function Sponsors() {
     const sponsorsTier2 = [
         {
             id: 0,
-            src: "https://upload.wikimedia.org/wikipedia/commons/0/07/ByteDance_logo_English.svg",
+            src: bytedanceLogo,
             link: "https://www.bytedance.com/en/"
+        },
+        {
+            id: 1,
+            src: webspatialLogo,
+            link: "https://webspatial.dev/"
         }
     ];
     const sponsorsTier3 = [
         {
             id: 0,
-            src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/1280px-AMD_Logo.svg.png",
+            src: amdLogo,
             link: "https://www.amd.com/"
         }
     ];
@@ -31,6 +41,16 @@ function Sponsors() {
             id: 0,
             src: crowdStrikeLogo,
             link: "https://www.crowdstrike.com/en-us/"
+        },
+        {
+            id: 1,
+            src: elevenlabsLogo,
+            link: "https://elevenlabs.io/"
+        },
+        {
+            id: 2,
+            src: markkulaLogo,
+            link: "https://www.scu.edu/ethics/"
         }
     ];
 
@@ -70,7 +90,7 @@ function SponsorCard({logoSrc, sponsorLink, sponsorTier}) {
     return (
         <a href={sponsorLink} target="_blank" rel="noopener noreferrer" className={`sponsor-link  ${sponsorTier}`}>
             <div className='sponsor-card '>
-                <img src={logoSrc} className='sponsor-logo'></img>
+                <img src={logoSrc} className='sponsor-logo' alt='sponsor logo'/>
             </div>
         </a>
     );
