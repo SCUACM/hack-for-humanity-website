@@ -27,7 +27,6 @@
     background-position: center;
     width: 100%;
     max-width: 600px;
-    min-height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,14 +80,45 @@
   
   div.special-prizes {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 2em;
     margin: 2em 0;
     
+    .sponsored-row {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+      
+      .special-prize.sponsored {
+        min-height: 200px;
+        max-height: 200px;
+        padding: 1.5em 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+    
+    .regular-prizes-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+      
+      .special-prize {
+        min-height: 140px;
+        max-height: 140px;
+        padding: 1.5em 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    
     div.special-prize {
       border-radius: 30px;
-      padding: 2em 3em;
+      padding: 1.5em 2.5em;
       position: relative;
       min-width: 250px;
       
@@ -97,7 +127,27 @@
         font-size: large;
         text-align: center;
         margin: 0;
-        line-height: 1.6;
+        line-height: 1.4;
+        
+        &.prize-title {
+          margin-bottom: 0.3em;
+        }
+      }
+      
+      .sponsor-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3em;
+        margin-top: 0.5em;
+        
+        .sponsor-text {
+          font-family: CaskaydiaMono;
+          font-size: small;
+          font-style: italic;
+          margin: 0;
+          color: #555;
+        }
       }
       
       &.green-box {
@@ -130,6 +180,57 @@
           top: -40px;
           right: -30px;
           width: 100px;
+        }
+      }
+      
+      /* AI icon styling */
+      &.rai-box {
+        img.ai-icon {
+          position: absolute;
+          bottom: -45px;
+          right: -35px;
+          width: 110px;
+          transform: rotate(-15deg);
+        }
+      }
+      
+      /* ElevenLabs icon styling */
+      &.elevenlabs-box {
+        .sponsor-section {
+          gap: 0.2em;
+          margin-top: 0.3em;
+        }
+        
+        img.elevenlabs-icon {
+          width: 80px;
+          height: auto;
+        }
+      }
+      
+      /* ByteDance icon styling */
+      &.webspatial-box {
+        img.bytedance-icon {
+          width: 100px;
+          height: auto;
+        }
+      }
+      
+      /* AMD icon styling */
+      &.amd-box {
+        img.amd-icon {
+          width: 75px;
+          height: auto;
+        }
+      }
+      
+      /* Game controller icon styling */
+      &.play-box {
+        img.game-controller-icon {
+          position: absolute;
+          top: -10px;
+          right: -20px;
+          width: 60px;
+          transform: rotate(20deg);
         }
       }
     }
@@ -171,15 +272,46 @@
     }
     
     div.special-prizes {
-      flex-wrap: wrap;
       gap: 1.5em;
+      
+      .sponsored-row {
+        gap: 1.5em;
+        
+        .special-prize.sponsored {
+          min-height: 180px;
+          max-height: 180px;
+          padding: 1.2em 2em;
+        }
+      }
+      
+      .regular-prizes-grid {
+        gap: 1.5em;
+        
+        .special-prize {
+          min-height: 130px;
+          max-height: 130px;
+          padding: 1.2em 2em;
+        }
+      }
       
       div.special-prize {
         min-width: 200px;
-        padding: 1.5em 2em;
         
         p {
           font-size: medium;
+        }
+        
+        /* Scale down icons for smaller screens */
+        &.rai-box img.ai-icon {
+          width: 85px;
+          bottom: -35px;
+          right: -25px;
+        }
+        
+        &.play-box img.game-controller-icon {
+          width: 50px;
+          top: -15px;
+          right: -20px;
         }
       }
     }
@@ -216,6 +348,71 @@
         
         &:nth-child(3) {
           order: 3;
+        }
+      }
+    }
+    
+    div.special-prizes {
+      .sponsored-row {
+        .special-prize.sponsored {
+          min-height: 170px;
+          max-height: 170px;
+          
+          .sponsor-section {
+            gap: 0.2em;
+            margin-top: 0.5em;
+            
+            .sponsor-text {
+              font-size: x-small;
+            }
+          }
+        }
+      }
+      
+      .regular-prizes-grid {
+        .special-prize {
+          min-height: 120px;
+          max-height: 120px;
+        }
+      }
+      
+      div.special-prize {
+        /* Further scale down icons for mobile */
+        &.rai-box img.ai-icon {
+          width: 65px;
+          bottom: -25px;
+          right: -20px;
+        }
+        
+        &.play-box img.game-controller-icon {
+          width: 40px;
+          top: -10px;
+          right: -10px;
+        }
+        
+        /* Responsive sponsor logos */
+        &.elevenlabs-box img.elevenlabs-icon {
+          width: 70px;
+        }
+        
+        &.webspatial-box img.bytedance-icon {
+          width: 80px;
+        }
+        
+        &.amd-box img.amd-icon {
+          width: 60px;
+        }
+        
+        img.sprout-left,
+        img.sprout-right {
+          width: 120px;
+          bottom: -40px;
+        }
+        
+        &.graduate-box img.grad-cap {
+          width: 80px;
+          top: -30px;
+          right: -20px;
         }
       }
     }
