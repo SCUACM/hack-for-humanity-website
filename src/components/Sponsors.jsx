@@ -55,28 +55,28 @@ function Sponsors() {
     ];
 
     return (
-        <section id="partners">
+        <section id="sponsors">
             {/* <img src={airplaneSticker} className='sticker plane'></img> */}
             <img src={rocketImg} className='sticker rocket'></img>
-            <h2 className='partners-title'>Thank you to all our</h2>
+            <h2 className='sponsors-title'>Thank you to all our</h2>
             <h1>Sponsors!</h1>
 
-            <div className='partners-container'>
+            <div className='sponsors-container'>
                 {sponsorsTier1.map((s) => (
                     <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier="tier1" key={s.id}/>
                 ))}
             </div>
-            <div className='partners-container'>
+            <div className='sponsors-container'>
                 {sponsorsTier2.map((s) => (
                     <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier="tier2" key={s.id}/>
                 ))}
             </div>
-            <div className='partners-container'>
+            <div className='sponsors-container'>
                 {sponsorsTier3.map((s) => (
                     <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier="tier3" key={s.id}/>
                 ))}
             </div>
-            <div className='partners-container'>
+            <div className='sponsors-container'>
                 {sponsorsTier4.map((s) => (
                     <SponsorCard logoSrc={s.src} sponsorLink={s.link} sponsorTier="tier4" key={s.id}/>
                 ))}
