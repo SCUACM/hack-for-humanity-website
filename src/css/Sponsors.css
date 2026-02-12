@@ -1,4 +1,4 @@
-#sponsors {
+#partners {
     margin: 0;
     padding-bottom: 2em;
     text-align: center;
@@ -19,7 +19,7 @@
     box-sizing: border-box;
     --sponsor-card-height: 7.5em;
 
-    .sponsors-container {
+    .partners-container {
         margin: 1em 4em;
         display: flex;
         flex-wrap: wrap;
@@ -27,7 +27,7 @@
         justify-self: center;
     }
 
-    .sponsors-title {
+    .partners-title {
         font-family: 'CaskaydiaMono';
         font-weight: normal;
         color: var(--hunter-green);
