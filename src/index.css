@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url('assets/images/graph_paper_bg.png');
+  background-image: url('./assets/images/graph_paper_bg.png');
   background-repeat: repeat;
   background-size: 400px;
   margin: 0;
@@ -15,17 +15,17 @@ body {
 
 @font-face {
   font-family: GlowBetter;
-  src: url('assets/fonts/GLOWBETTER.OTF');
+  src: url('./assets/fonts/GLOWBETTER.OTF');
 }
 
 @font-face {
   font-family: CaskaydiaMono;
-  src: url('assets/fonts/CASKAYDIAMONONERDFONT-REGULAR.TTF');
+  src: url('./assets/fonts/CASKAYDIAMONONERDFONT-REGULAR.TTF');
   font-weight: normal;
 }
 
 @font-face {
   font-family: CaskaydiaMono;
-  src: url('assets/fonts/CASKAYDIAMONONERDFONT-BOLD.TTF');
+  src: url('./assets/fonts/CASKAYDIAMONONERDFONT-BOLD.TTF');
   font-weight: bold;
 }
