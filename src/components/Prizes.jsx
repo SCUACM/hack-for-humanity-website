@@ -8,6 +8,7 @@ import aiIcon from '../assets/images/AI.png';
 import elevenLabsIcon from '../assets/images/elevenlabs.png';
 import bytedanceIcon from '../assets/images/ByteDance_logo.svg';
 import gameControllerIcon from '../assets/images/video_game_controller.png';
+import broncoCTFIcon from '../assets/images/broncoCTF_horse.png';
 import amdIcon from '../assets/images/amd_logo.svg';
 
 function Prizes() {
@@ -90,10 +91,13 @@ function Prizes() {
         <p>
           <strong>Bronco Security Sponsored Capture the Flag<br/>
           (CTF) Cybersecurity Challenge:</strong><br/>
-          First Place BroncoSec CTF Prize: TBD<br/>
-          Second Place BroncoSec CTF Prize: TBD<br/>
-          Third Place BroncoSec CTF Prize: TBD
+          First Place CTF Score: $300<br/>
+          Second Place CTF Score: $200<br/>
+          Third Place CTF Score: $100<br/>
+          Best Solo Score: 1x BroncoCTF 2026 Hoodie (Medium Size)<br/>
+          <i className='ctf-eligibility'>Only SCU students may win CTF prizes. Learn more about BroncoCTF <a href='https://broncosec.com/BroncoCTF'>here</a>.</i>
         </p>
+        <img src={broncoCTFIcon} alt="BroncoCTF icon" className='broncoCTF-icon'/>
       </div>
     </section>
   );
