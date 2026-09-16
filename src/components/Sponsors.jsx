@@ -1,6 +1,6 @@
 import '../css/Sponsors.css';
 // import airplaneSticker from '../assets/images/paperairplane.png';
-import rocketImg from '../assets/images/rocket.jpg';
+import rocketImg from '../assets/images/rocket.png';
 import cioccaLogo from '../assets/images/ciocca_center.png';
 import crowdStrikeLogo from '../assets/images/crowdstrike_logo.png';
 import bytedanceLogo from '../assets/images/ByteDance_logo.svg';
